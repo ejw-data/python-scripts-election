@@ -3,9 +3,6 @@
 
 import os    # Module to create file paths across operating systems
 import csv   # Module to read CSV files
-import time  # Track time for program to execute
-
-start_time = time.process_time()  # Track Time (start)
 
 ##########################################################################################
 ######################### Data Extract / Create Dict #####################################
@@ -57,7 +54,6 @@ with open(csvpath) as csvfile:
 
     f.close()
 
-    print(f"--- {(time.process_time() - start_time)} seconds ---")  # Final program run time
 
     ###################################################################
     ################ Printout Dict to terminal ########################
